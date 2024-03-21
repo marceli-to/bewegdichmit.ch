@@ -2,7 +2,7 @@
   <x-layout.inner>
     <x-layout.grid>
       <x-layout.span class="sm:col-span-5 hyphens-auto">
-        <a name="bewegst-du-dich-mit"></a>
+        <a name="bewegst-du-dich-mit" class="block scroll-mt-20"></a>
         <x-headings.h1>
           Bewegst du dich mit?
         </x-headings.h1>

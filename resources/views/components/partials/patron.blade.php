@@ -1,6 +1,6 @@
 <x-layout.section class="bg-white">
   <x-layout.inner>
-    <a name="spenden"></a>
+    <a name="spenden" class="block scroll-mt-20"></a>
     <x-headings.h1>
       Werde Gönner
     </x-headings.h1>
