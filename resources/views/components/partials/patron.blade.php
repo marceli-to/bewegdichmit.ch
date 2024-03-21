@@ -9,8 +9,9 @@
         <p>Du findest die Idee des Wagi-Laufs super? Möchtest nicht mitlaufen aber unsere Wagerenhof Läuferinnen und Läufer finanziell unterstützen?</p>
         <p>Herzlichen Dank! Mit deinem Beitrag unterstützt du die Gesundheit und Fitness unserer Bewohnerinnen und Bewohner.</p>
         <x-link 
-          url="" 
+          url="https://www.wagerenhof.ch/unterstuetzen/geld-spenden/jetzt-spenden-fuer-fitness-und-gesundheit" 
           class="bg-sky hover:bg-sunshine text-black"
+          target="_blank"
           title="Jetzt Spenden" />
       </x-layout.span>
       <x-layout.span class="sm:col-span-3 mt-20 sm:mt-0">
