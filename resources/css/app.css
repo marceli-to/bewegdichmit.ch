@@ -1,0 +1,43 @@
+@import "typo/webfonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply flex-1;
+}
+
+h1, h2 {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+p {
+  @apply mb-16 lg:mb-20;
+}
+
+p:last-of-type {
+  @apply mb-0;
+}
+
+strong {
+}
+
+main ul {
+  @apply m-0 p-0;
+}
+
+main ul:last-child {
+  @apply mb-0;
+}
+
+main ul li {
+  @apply list-item list-disc ml-20;
+}
