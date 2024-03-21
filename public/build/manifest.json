@@ -1,32 +1,8 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-85b5fdab.css",
+    "file": "assets/app-8ae0311a.css",
     "isEntry": true,
     "src": "resources/css/app.css"
-  },
-  "resources/css/fonts/Basetica-Bold.woff": {
-    "file": "assets/Basetica-Bold-80d63390.woff",
-    "src": "resources/css/fonts/Basetica-Bold.woff"
-  },
-  "resources/css/fonts/Basetica-Bold.woff2": {
-    "file": "assets/Basetica-Bold-1aaccaf1.woff2",
-    "src": "resources/css/fonts/Basetica-Bold.woff2"
-  },
-  "resources/css/fonts/Basetica-Italic.woff": {
-    "file": "assets/Basetica-Italic-15f2ab97.woff",
-    "src": "resources/css/fonts/Basetica-Italic.woff"
-  },
-  "resources/css/fonts/Basetica-Italic.woff2": {
-    "file": "assets/Basetica-Italic-376264d1.woff2",
-    "src": "resources/css/fonts/Basetica-Italic.woff2"
-  },
-  "resources/css/fonts/Basetica-Regular.woff": {
-    "file": "assets/Basetica-Regular-f4130070.woff",
-    "src": "resources/css/fonts/Basetica-Regular.woff"
-  },
-  "resources/css/fonts/Basetica-Regular.woff2": {
-    "file": "assets/Basetica-Regular-20b87a15.woff2",
-    "src": "resources/css/fonts/Basetica-Regular.woff2"
   },
   "resources/icons/chevron-down.svg": {
     "file": "assets/chevron-down-3b95e92a.svg",
