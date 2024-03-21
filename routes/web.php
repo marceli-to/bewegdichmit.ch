@@ -16,8 +16,9 @@ use App\Http\Controllers\ApartmentController;
 */
 
 Route::view('/', 'pages.home')->name('page.home');
-Route::view('/impressum', 'pages.imprint')->name('page.imprint');
-Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
+// Route::view('/impressum-und-datenschutz', 'pages.imprint_privacy')->name('page.imprint-privacy');
+// Route::view('/impressum', 'pages.imprint')->name('page.imprint');
+// Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
 
 
 

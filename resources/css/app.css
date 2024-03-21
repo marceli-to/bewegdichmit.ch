@@ -20,7 +20,7 @@ h3 {
 }
 
 p {
-  @apply mb-16 lg:mb-20;
+  @apply mb-10 lg:mb-20;
 }
 
 p:last-of-type {
@@ -28,16 +28,31 @@ p:last-of-type {
 }
 
 strong {
+  @apply font-basetica-bold
+}
+
+i, em {
+  @apply font-basetica-italic italic;
 }
 
 main ul {
   @apply m-0 p-0;
 }
 
-main ul:last-child {
-  @apply mb-0;
+main ul {
+  @apply mb-10 lg:mb-20;
 }
 
 main ul li {
   @apply list-item list-disc ml-20;
+}
+
+.imprint h1,
+.privacy h1 {
+  @apply uppercase font-basetica-bold text-2xl lg:text-3xl mb-10 lg:mb-20
+}
+
+.imprint h2,
+.privacy h2 {
+  @apply uppercase font-basetica-bold text-lg lg:text-xl mb-5 lg:mb-10
 }

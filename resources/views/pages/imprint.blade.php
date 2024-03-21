@@ -5,21 +5,21 @@
   <x-layout.inner class="imprint">
     <h1>Impressum</h1>
     <p>
-      Morf Bautreuhand AG<br>
-      Schickmattweg 8<br>
-      8332 Russikon<br>
+      Stiftung Wagerenhof<br>
+      Asylstrasse 24<br>
+      8610 Uster<br>
       <a 
-        href="mailto:hello@bewegdichmit.ch" 
+        href="mailto:bewegdichmit@wagerenhof.ch" 
         target="_blank" 
         rel="noopener" 
         class="hover:underline underline-offset-2 decoration-1">
-        hello@bewegdichmit.ch
+        bewegdichmit@wagerenhof.ch
       </a><br>
-      <a href="https://www.morf-bautreuhand.ch" 
+      <a href="https://www.wagerenhof.ch" 
         target="_blank" 
         rel="noopener" 
         class="hover:underline underline-offset-2 decoration-1">
-        www.morf-bautreuhand.ch
+        www.wagerenhof.ch
       </a>
     </p>
     <h2>Design und Entwicklung</h2>
