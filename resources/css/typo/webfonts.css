@@ -5,14 +5,14 @@
 
 @font-face {
   font-family: 'BaseticaItalic';
-  src: url('fonts/Basetica-Italic.woff2') format('woff2'),url('fonts/Basetica-Italic.woff') format('woff'); font-weight: normal;
+  src: url('../fonts/Basetica-Italic.woff2') format('woff2'),url('../fonts/Basetica-Italic.woff') format('woff'); font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'BaseticaRegular';
-  src: url('fonts/Basetica-Regular.woff2') format('woff2'), url('fonts/Basetica-Regular.woff') format('woff');
+  src: url('../fonts/Basetica-Regular.woff2') format('woff2'), url('../fonts/Basetica-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'BaseticaBold';
-  src: url('fonts/Basetica-Bold.woff2') format('woff2'),  url('fonts/Basetica-Bold.woff') format('woff');
+  src: url('../fonts/Basetica-Bold.woff2') format('woff2'),  url('../fonts/Basetica-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
