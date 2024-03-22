@@ -75,6 +75,8 @@ class RegistrationController extends Controller
     $available_slots = $slots->filter(function ($item) {
       return $item > 0;
     });
+
+    dd($available_slots);
     return response()->json($available_slots);
   }
 
