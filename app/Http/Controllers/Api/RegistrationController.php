@@ -62,12 +62,15 @@ class RegistrationController extends Controller
         return $max_slots - $item->total;
       });
   
-    $default_slots = ['10.30', '11.15', '12.00'];
+    $default_slots = ['10.30' => $max_slots, '11.15' => $max_slots, '12.00' => $max_slots];
 
     // if slots is empty, all start times are available
     if ($slots->isEmpty()) {
-      return response()->json($default_slots);
+      return response()->json(collect($default_slots->keys()));
     }
+
+    // merge the default slots with the available slots
+    $slots = $default_slots->merge($slots);
 
     // if there are no slots available for a start time, remove the from $default_slots
     $available_slots = $slots->filter(function ($item) {
