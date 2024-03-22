@@ -17,6 +17,16 @@
     <div class="mt-20 lg:mt-30">
       <div class="sm:grid sm:grid-cols-12 sm:gap-x-16 lg:gap-x-20 sm:gap-y-16 lg:gap-y-20">
         <div class="sm:col-span-6 mb-20 sm:mb-0">
+          <form-label :error="errors.category">Kategorie*</form-label>
+          <form-select 
+            v-model="form.category" 
+            :options="categories" 
+            :error="errors.category"
+            @focus="removeError('category')">
+          </form-select>
+        </div>
+        <div class="hidden sm:block sm:col-span-6"></div>
+        <div class="sm:col-span-6 mb-20 sm:mb-0">
           <form-label :error="errors.entry_fee">
             <template v-if="form.category == 'single' && hasEntryFeeError">
               <span class="text-red-600">Startgebühr für Einzelläufer:innen beträgt minimum 25.–</span>
@@ -31,20 +41,9 @@
           <form-input 
             type="number" 
             v-model="form.entry_fee" 
-            :min="[categories == 'single' ? 25 : 50]"
             :error="errors.entry_fee"
             @focus="removeError('entry_fee')">
           </form-input>
-        </div>
-        <div class="hidden sm:block sm:col-span-6"></div>
-        <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.category">Kategorie*</form-label>
-          <form-select 
-            v-model="form.category" 
-            :options="categories" 
-            :error="errors.category"
-            @focus="removeError('category')">
-          </form-select>
         </div>
         <div class="sm:col-span-6 mb-20 sm:mb-0" v-if="isFetched">
           <form-label :error="errors.start_time">Startzeit*</form-label>
@@ -132,7 +131,6 @@
           <form-textarea v-model="form.remarks">
           </form-textarea>
         </div>
-
         <template v-if="form.category == 'single'">
           <div class="sm:col-span-full mb-20 sm:mb-0 max-w-3xl">
             <form-group>
@@ -144,7 +142,6 @@
             </form-group>
           </div>
         </template>
-        
         <div class="sm:col-span-full mb-20 sm:mb-0">
           <form-group>
             <form-checkbox id="conditions" :selected="form.conditions" v-model="form.conditions" :error="errors.conditions">
@@ -351,6 +348,15 @@ export default {
     },
 
     'form.category': function(value) {
+
+      if (value == 'single') {
+        this.form.entry_fee = 25;
+      } 
+      else if (value == 'group') {
+        this.form.entry_fee = 50;
+      }
+
+
       if (value == 'single' && this.form.entry_fee < 25) {
         this.errors.entry_fee = true;
         this.hasEntryFeeError = true;
