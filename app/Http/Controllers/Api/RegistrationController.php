@@ -70,7 +70,7 @@ class RegistrationController extends Controller
     }
 
     // merge the default slots with the available slots
-    $slots = $default_slots->merge($slots);
+    $slots = collect($default_slots)->merge($slots);
 
     // if there are no slots available for a start time, remove the from $default_slots
     $available_slots = $slots->filter(function ($item) {
