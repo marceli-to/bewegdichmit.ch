@@ -59,10 +59,11 @@ class RegistrationController extends Controller
       ->groupBy('start_time')
       ->get()
       ->keyBy('start_time')
-      ->map(function ($item) {
-        return 100 - $item->total;
+      ->map(function ($item) use ($max_slots) {
+        return $max_slots - $item->total;
       });
-    
+
+  
     $default_slots = ['10.30', '11.15', '12.00'];
 
     // if slots is empty, all start times are available
@@ -70,13 +71,11 @@ class RegistrationController extends Controller
       return response()->json($default_slots);
     }
 
-    // if slots is not empty, remove the start times from default_slots that are fully booked
-    return response()->json($default_slots->reject(function ($slot) use ($slots, $max_slots) {
-      return $slots->has($slot) && $slots[$slot] === $max_slots;
-    }));
-
-
-
+    // if there are no slots available for a start time, remove the from $default_slots
+    $slots = $slots->filter(function ($item) {
+      return $item > 0;
+    });
+    return response()->json($slots);
   }
 
 }
