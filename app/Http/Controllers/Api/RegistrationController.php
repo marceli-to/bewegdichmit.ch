@@ -62,16 +62,21 @@ class RegistrationController extends Controller
       ->map(function ($item) {
         return 100 - $item->total;
       });
+    
+    $default_slots = ['10.30', '11.15', '12.00'];
 
     // if slots is empty, all start times are available
     if ($slots->isEmpty()) {
-      return response()->json(['10.30', '11.15', '12.00']);
+      return response()->json($default_slots);
     }
 
-    // if slots is not empty, return only the start times that are not fully booked
-    return response()->json($slots->filter(function ($value, $key) {
-      return $value > 0;
-    })->keys());
+    // if slots is not empty, remove the start times from default_slots that are fully booked
+    return response()->json($default_slots->reject(function ($slot) use ($slots, $max_slots) {
+      return $slots->has($slot) && $slots[$slot] === $max_slots;
+    }));
+
+
+
   }
 
 }
