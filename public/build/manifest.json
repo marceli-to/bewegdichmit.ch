@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-abda32cf.css",
+    "file": "assets/app-d21f753e.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -38,14 +38,14 @@
     "src": "resources/js/app.js"
   },
   "resources/js/form/register.css": {
-    "file": "assets/register-76b10290.css",
+    "file": "assets/register-20da2316.css",
     "src": "resources/js/form/register.css"
   },
   "resources/js/form/register.js": {
     "css": [
-      "assets/register-76b10290.css"
+      "assets/register-20da2316.css"
     ],
-    "file": "assets/register-3f03b76d.js",
+    "file": "assets/register-1ddb749d.js",
     "imports": [
       "resources/js/app.js"
     ],

@@ -1,48 +1,44 @@
+
 <template>
-  <input
+  <select
     :id="id"
-    :type="type"
     :value="modelValue"
-    :placeholder="placeholder"
     @input="updateInput"
-    :class="[$props.error ? 'placeholder:text-red-600' : '', 'bg-white outline-none border-none ring-0 focus:ring-0 p-10 w-full placeholder:text-gray-300']"
-  />
+    class="bg-white outline-none border-none ring-0 focus:ring-0 p-10 w-full placeholder:text-black"
+  >
+    <option 
+      v-for="option in options" 
+      :key="option.value" 
+      :value="option.value">
+      {{ option.label }}
+    </option>
+  </select>
 </template>
 <script>
 export default {
-  name: "FormInput",
+  name: "FormSelect",
   props: {
-    
     id: {
       type: String,
       default: "",
     },
-    
     modelValue: {
       type: [String, Number],
       default: "",
     },
-
-    type: {
-      type: String,
-      default: "text",
+    options: {
+      type: Array,
+      default: () => [],
     },
-
-    placeholder: {
-      type: String,
-      default: "",
-    },
-
     error: {
       type: Boolean,
       default: false,
     },
   },
-
   methods: {
     updateInput(event) {
       this.$emit("update:modelValue", event.target.value);
-    }
-  }
+    },
+  },
 };
 </script>

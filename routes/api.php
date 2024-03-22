@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/register', [RegistrationController::class, 'store']);
+Route::get('/slots', [RegistrationController::class, 'slots']);

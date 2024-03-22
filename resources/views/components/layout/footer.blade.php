@@ -28,7 +28,7 @@
         <nav class="text-xs">
           <ul class="sm:flex sm:flex-col sm:gap-x-15 lg:gap-x-20">
             <li>
-              <a href="" target="_blank" title="Impressum">
+              <a href="{{ route('page.conditions') }}" target="_blank" title="Teilnahmebedingungen">
                 Teilnahmebedingungen
               </a>
             </li>

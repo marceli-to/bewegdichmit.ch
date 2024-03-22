@@ -24,10 +24,20 @@ class RegistrationStoreRequest extends FormRequest
   public function rules()
   {
     return [
-      // 'firstname' => 'required_if:member_type,Student:in,Einzelmitglied',
-      // 'name' => 'required_if:member_type,Student:in,Einzelmitglied',
-      // 'institution' => 'required_if:member_type,Institution',
-      // 'email' => 'required|email',
+      'category' => 'required|not_in:null',
+      'start_time' => 'required|not_in:null',
+      'entry_fee' => 'required|not_in:null',
+      'firstname' => 'required',
+      'name' => 'required',
+      'street' => 'required',
+      'location' => 'required',
+      'email' => 'required|email',
+      'group_name' => 'required_if:category,group',
+      'number_of_members' => 'required_if:category,group',
+      'conditions' => 'accepted',
+      'buddy' => 'nullable',
+      'remarks' => 'nullable',
+      'phone' => 'nullable',
     ];
   }
 
@@ -40,11 +50,18 @@ class RegistrationStoreRequest extends FormRequest
   public function messages()
   {
     return [
-      // 'firstname.required_if' => 'Vorname fehlt',
-      // 'name.required_if' => 'Name fehlt',
-      // 'institution.required_if' => 'Institution fehlt',
-      // 'email.required' => 'E-Mail fehlt',
-      // 'email.email' => 'E-Mail ungültig',
+      'category.required' => 'Kategorie fehlt',
+      'start_time.required' => 'Startzeit fehlt',
+      'entry_fee.required' => 'Startgebühr fehlt',
+      'firstname.required' => 'Vorname fehlt',
+      'name.required' => 'Name fehlt',
+      'street.required' => 'Straße fehlt',
+      'location.required' => 'Ort fehlt',
+      'email.required' => 'E-Mail fehlt',
+      'email.email' => 'E-Mail ungültig',
+      'group_name.required_if' => 'Gruppenname fehlt',
+      'number_of_members.required_if' => 'Anzahl Personen fehlt',
+      'conditions.accepted' => 'Bedingungen müssen akzeptiert werden',
     ];
   }
 }

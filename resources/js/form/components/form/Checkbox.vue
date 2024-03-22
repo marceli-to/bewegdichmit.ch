@@ -1,17 +1,16 @@
 <template>
-  <div class="relative min-h-28 xl:min-h-32 w-full border-b border-black flex justify-start items-center leading-none pl-8 md:pl-12">
-    <label :for="id" class="text-xs xl:text-sm break-words hyphens-auto cursor-pointer flex items-center w-full">
+  <div :class="cls">
+    <label :for="id" class="hyphens-auto cursor-pointer flex items-start w-full">
       <input
         :id="id"
-        type="radio"
+        type="checkbox"
         :value="modelValue"
         :placeholder="placeholder"
         :checked="$props.selected ? true : false"
         @input="updateInput"
-        class="opacity-0 absolute cursor-pointer h-0 w-0"
+        class="cursor-pointer h-20 w-20 mt-2 !accent-sunshine !ring-0 !ring-offset-0 !outline-none !border-none"
       />
-      <span class="block size-12 xl:size-16 rounded-full border-black border bg-white"></span>
-      <div class="ml-8 xl:ml-12">
+      <div :class="[$props.error ? 'text-red-600' : '', 'ml-15']">
         <slot name="label"></slot>
       </div>
     </label>
@@ -22,6 +21,11 @@
 export default {
   name: "FormCheckbox",
   props: {
+
+    cls: {
+      type: String,
+      default: "",
+    },
     
     id: {
       type: String,
@@ -29,7 +33,7 @@ export default {
     },
     
     modelValue: {
-      type: [String, Number],
+      type: [String, Number, Boolean],
       default: "",
     },
 
@@ -47,12 +51,23 @@ export default {
       type: Boolean,
       default: false,
     },
+
+    error: {
+      type: Boolean,
+      default: false,
+    },
+  },
+
+  methods: {
+    updateInput(event) {
+      this.$emit("update:modelValue", event.target.checked);
+    },
   },
 }
 </script>
 
 <style scoped>
-input[type="radio"]:checked ~ span {
+input[type="checkbox"]:checked {
   @apply bg-black
 }
 </style>

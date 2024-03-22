@@ -16,11 +16,13 @@ use App\Http\Controllers\ApartmentController;
 */
 
 Route::view('/', 'pages.home')->name('page.home');
+Route::view('/teilnahmebedingungen', 'pages.conditions')->name('page.conditions');
 // Route::view('/impressum-und-datenschutz', 'pages.imprint_privacy')->name('page.imprint-privacy');
 // Route::view('/impressum', 'pages.imprint')->name('page.imprint');
 // Route::view('/datenschutz', 'pages.privacy')->name('page.privacy');
 
-
+// Add a get route for /slots that points to the slots method of the RegistrationController
+Route::get('/slots', 'App\Http\Controllers\Api\RegistrationController@slots');
 
 
 

@@ -5,7 +5,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class InquiryOwnerEmail extends Notification
+class RegistrationNotification extends Notification
 {
   use Queueable;
 
@@ -41,8 +41,8 @@ class InquiryOwnerEmail extends Notification
     return (new MailMessage)
       ->from(env('MAIL_FROM_ADDRESS'))
       ->replyTo(env('MAIL_TO'))
-      ->subject('Interessent bewegdichmit.ch')
-      ->markdown('mail.inquiry.owner', ['data' => $this->data]);
+      ->subject('Anmeldung Wagi-Lauf 2024')
+      ->markdown('mail.registration', ['data' => $this->data]);
   }
 
   /**

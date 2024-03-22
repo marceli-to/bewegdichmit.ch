@@ -5,7 +5,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class InquiryUserEmail extends Notification
+class ConfirmationNotification extends Notification
 {
   use Queueable;
 
@@ -41,8 +41,9 @@ class InquiryUserEmail extends Notification
     return (new MailMessage)
       ->from(env('MAIL_FROM_ADDRESS'))
       ->replyTo(env('MAIL_TO'))
-      ->subject('Ihre Interesse bewegdichmit.ch')
-      ->markdown('mail.inquiry.user', ['data' => $this->data]);
+      ->subject('Deine Anmeldung Wagi-Lauf 2024')
+      ->attach(storage_path('app/wagi-lauf-2024-qr-rechnung.pdf'))
+      ->markdown('mail.confirmation', ['data' => $this->data]);
   }
 
   /**
