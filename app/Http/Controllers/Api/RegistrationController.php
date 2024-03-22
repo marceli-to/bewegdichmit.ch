@@ -59,8 +59,8 @@ class RegistrationController extends Controller
       ->groupBy('start_time')
       ->get()
       ->keyBy('start_time')
-      ->map(function ($item) use ($max_slots) {
-        return $max_slots - $item->total;
+      ->map(function ($item) {
+        return 100 - $item->total;
       });
 
     // if slots is empty, all start times are available
