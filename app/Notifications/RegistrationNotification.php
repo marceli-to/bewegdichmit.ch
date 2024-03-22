@@ -40,7 +40,7 @@ class RegistrationNotification extends Notification
   {
     return (new MailMessage)
       ->from(env('MAIL_FROM_ADDRESS'))
-      ->replyTo(env('MAIL_TO'))
+      ->replyTo(env('MAIL_REPLY_TO'))
       ->subject('Anmeldung Wagi-Lauf 2024')
       ->markdown('mail.registration', ['data' => $this->data]);
   }

@@ -40,7 +40,7 @@ class ConfirmationNotification extends Notification
   {
     return (new MailMessage)
       ->from(env('MAIL_FROM_ADDRESS'))
-      ->replyTo(env('MAIL_TO'))
+      ->replyTo(env('MAIL_REPLY_TO'))
       ->subject('Deine Anmeldung Wagi-Lauf 2024')
       ->attach(storage_path('app/wagi-lauf-2024-qr-rechnung.pdf'))
       ->markdown('mail.confirmation', ['data' => $this->data]);

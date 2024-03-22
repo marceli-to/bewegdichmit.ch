@@ -10,7 +10,7 @@
       <card-group />
     </div>
   </div>
-  <form v-if="isFetched">
+  <form>
     <div v-if="validationErrors.length > 0">
       <validation-errors :validationErrors="validationErrors" />
     </div>
@@ -46,7 +46,7 @@
             @focus="removeError('category')">
           </form-select>
         </div>
-        <div class="sm:col-span-6 mb-20 sm:mb-0">
+        <div class="sm:col-span-6 mb-20 sm:mb-0" v-if="isFetched">
           <form-label :error="errors.start_time">Startzeit*</form-label>
           <form-select 
             v-model="form.start_time" 
