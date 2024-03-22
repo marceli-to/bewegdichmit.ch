@@ -72,10 +72,10 @@ class RegistrationController extends Controller
     }
 
     // if there are no slots available for a start time, remove the from $default_slots
-    $slots = $slots->filter(function ($item) {
+    $available_slots = $slots->filter(function ($item) {
       return $item > 0;
     });
-    return response()->json($slots);
+    return response()->json($available_slots);
   }
 
 }
