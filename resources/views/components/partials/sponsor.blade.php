@@ -11,8 +11,35 @@
         <x-headings.h2>
           Herzlichen Dank für die grossartige Unterstützung
         </x-headings.h2>
-        <div>
-          [Logos]
+        <div class="grid grid-cols-12 gap-x-16">
+          <x-cards.sponsor class="col-span-6" url="https://www.lionsclubs.org/de">
+            <x-icons.logo_lions class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <x-cards.sponsor class="col-span-6" url="https://mobiliar.ch">
+            <x-icons.logo_mobiliar class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <x-cards.sponsor class="col-span-4" url="https://www.sinn.de/de/Sinn-Spezialuhren.htm">
+            <x-icons.logo_sinn class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <x-cards.sponsor class="col-span-4" url="https://www.stihl.ch/de">
+            <x-icons.logo_stihl class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <x-cards.sponsor class="col-span-4" url="https://www.energieuster.ch/">
+            <x-icons.logo_energie_uster class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <x-cards.sponsor class="col-span-4" url="https://sanneubau.ch/">
+            <x-icons.logo_snb class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <x-cards.sponsor class="col-span-4" url="https://zkb.ch">
+            <x-icons.logo_zkb class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <x-cards.sponsor class="col-span-4" url="https://stoz.ch">
+            <x-icons.logo_stoz class="w-full h-full object-contain" />
+          </x-cards.sponsor>
+          <div class="col-span-full mb-4">Medienpartner</div>
+          <x-cards.sponsor class="col-span-6 !aspect-auto" url="https://zueriost.ch">
+            <x-icons.logo_zueriost class="w-full h-auto  object-contain" />
+          </x-cards.sponsor>
         </div>
       </x-layout.span>
       <x-layout.span class="sm:!col-span-5">
