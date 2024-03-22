@@ -20,6 +20,5 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 @vite('resources/css/app.css')
-@livewireStyles
 </head>
 <body class="antialiased font-basetica-regular leading-[1.4] text-xs sm:text-sm flex min-h-full flex-col">
