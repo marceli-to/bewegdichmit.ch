@@ -67,7 +67,8 @@
           <div class="sm:col-span-6 mb-20 sm:mb-0">
             <form-label :error="errors.number_of_members">Anzahl Personen*</form-label>
             <form-input 
-              type="text" 
+              type="number" 
+              min="1"
               v-model="form.number_of_members" 
               :error="errors.number_of_members"
               @focus="removeError('number_of_members')">
