@@ -33,7 +33,7 @@ class RegistrationStoreRequest extends FormRequest
       'location' => 'required',
       'email' => 'required|email',
       'group_name' => 'required_if:category,group',
-      'number_of_members' => 'required_if:category,group|digits_between:1,6',
+      'number_of_members' => 'required_if:category,group',
       'conditions' => 'accepted',
       'buddy' => 'nullable',
       'remarks' => 'nullable',
@@ -60,7 +60,6 @@ class RegistrationStoreRequest extends FormRequest
       'email.required' => 'E-Mail fehlt',
       'email.email' => 'E-Mail ungültig',
       'group_name.required_if' => 'Gruppenname fehlt',
-      'number_of_members.digits_between' => 'Anzahl Personen muss zwischen 1 und 6 liegen',
       'number_of_members.required_if' => 'Anzahl Personen fehlt',
       'conditions.accepted' => 'Bedingungen müssen akzeptiert werden',
     ];
