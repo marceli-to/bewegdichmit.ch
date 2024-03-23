@@ -47,7 +47,7 @@
           Firmenpartner oder freiwillige Mitarbeitende gesucht
         </x-headings.h2>
         <p>Du willst den Wagi-Lauf als Firmenpartner oder freiwillige Mitarbeitende unterstützen?</p>
-        <p>Viviane Kauflin, Leiterin Fundraising, freut sich über eine Kontaktaufnahme: <a href="mailto:viviane.kauflin@wagerenhof.ch" class="underline decoration-1 underline-offset-4 hover:no-underline">viviane.kauflin@wagerenhof.ch</a></p>
+        <p>Viviane Kauflin-Lyoth, Leiterin Fundraising, freut sich über eine Kontaktaufnahme: <a href="mailto:viviane.kauflin@wagerenhof.ch" class="underline decoration-1 underline-offset-4 hover:no-underline">viviane.kauflin@wagerenhof.ch</a></p>
       </x-layout.span>
     </x-layout.grid>
   </x-layout.inner>

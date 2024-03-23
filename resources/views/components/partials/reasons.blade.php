@@ -11,6 +11,7 @@
         <p>Zuschauerinnen und Zuschauer, die tatkräftig anfeuern und mitfeiern sind natürlich auch willkommen.</p>
         <x-link 
           url="https://wagerenhof.ch/bewegdichmit" 
+          target="_blank"
           class="bg-white hover:bg-black text-black hover:text-sunshine"
           title="Zum Blogeintrag" />
       </x-layout.span>

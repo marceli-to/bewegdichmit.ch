@@ -2,7 +2,7 @@
   <x-layout.inner>
     <x-layout.grid>
       <x-layout.span class="sm:col-span-4 mt-30 lg:mt-20">
-        <p class="font-basetica-bold text-md lg:text-lg">Beweg dich mit und erlebe mit uns den Wagerenhof! Begleitet von Live Musik, einer vielseitigen Foodmeile und weiteren Überraschungen lassen wir sportliche Betätigung und Teilhabe verschmelzen.</p>
+        <p class="font-basetica-bold text-md lg:text-lg">Beweg dich mit und erlebe mit uns den Wagerenhof!<br>Begleitet von Live Musik, einer vielseitigen Foodmeile und weiteren Überraschungen lassen wir sportliche Betätigung und Teilhabe verschmelzen.</p>
       </x-layout.span>
     </x-layout.grid>
     <x-layout.grid class="mt-20 lg:mt-40">

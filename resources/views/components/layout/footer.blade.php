@@ -3,6 +3,7 @@
     <a 
       href="https://wagerenhof.ch" 
       title="Webseite Wagerenhof" 
+      target="_blank"
       class="block w-200 sm:w-240 lg:w-[340px] mb-15 lg:mb-25">
       <x-icons.logo_wagerenhof class="w-full h-auto block" />
     </a>
@@ -33,7 +34,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.wagerenhof.ch/impressum" target="_blank" title="Impressum">
+              <a href="{{ route('page.imprint') }}" target="_blank" title="Impressum">
                 Impressum
               </a>
             </li>

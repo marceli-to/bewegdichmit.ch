@@ -2,7 +2,7 @@
   <template v-if="isSent">
     <feedback />
   </template>
-  <div class="sm:grid sm:grid-cols-6 sm:gap-16 lg:gap-20">
+  <div class="flex flex-col sm:grid sm:grid-cols-6 gap-16 lg:gap-20">
     <div class="sm:col-span-3 bg-white">
       <card-single />
     </div>
@@ -65,10 +65,11 @@
             </form-input>
           </div>
           <div class="sm:col-span-6 mb-20 sm:mb-0">
-            <form-label :error="errors.number_of_members">Anzahl Personen*</form-label>
+            <form-label :error="errors.number_of_members">Anzahl Personen* (max. 6)</form-label>
             <form-input 
               type="number" 
               min="1"
+              max="6"
               v-model="form.number_of_members" 
               :error="errors.number_of_members"
               @focus="removeError('number_of_members')">
@@ -233,7 +234,7 @@ export default {
       categories: [
         { value: 'null', label: 'Kategorie wählen...'},
         { value: 'single', label: 'Einzelläufer:in' },
-        { value: 'group', label: 'Gruppe/Familie' },
+        { value: 'group', label: 'Gruppen/Familien' },
       ],
 
       start_time: [
@@ -345,7 +346,6 @@ export default {
         this.errors.entry_fee = null;
         this.hasEntryFeeError = false;
       }
-      console.log(this.hasEntryFeeError);
     },
 
     'form.category': function(value) {
@@ -374,6 +374,12 @@ export default {
 
     'form.conditions': function(value) {
       this.errors.conditions = null;
+    },
+
+    'form.number_of_members': function(value) {
+      if (value > 6) {
+        this.form.number_of_members = 6;
+      }
     },
 
   },

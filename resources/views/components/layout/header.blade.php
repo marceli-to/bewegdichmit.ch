@@ -1,4 +1,4 @@
-<header class="bg-sky h-75 lg:h-130 w-full px-20 lg:px-40">
+<header class="bg-sky h-85 lg:h-150 w-full px-20 lg:px-40">
   <x-layout.inner class="h-full flex justify-between items-center">
     <x-menu.wrapper />
     <a 

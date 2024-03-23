@@ -48,13 +48,11 @@ main ul li {
 }
 
 .conditions h1,
-.imprint h1,
-.privacy h1 {
+.imprint h1 {
   @apply uppercase font-basetica-bold text-2xl lg:text-3xl mb-10 lg:mb-20
 }
 
 .conditions h2,
-.imprint h2,
-.privacy h2 {
+.imprint h2 {
   @apply uppercase font-basetica-bold text-lg lg:text-xl mb-5 lg:mb-10
 }

@@ -4,7 +4,7 @@
   </div>
   <div class="text-base pb-base">
     <strong>Kategorie</strong><br>
-    {{ $data->category == 'single' ? 'Einzelläufer:in' : 'Gruppe/Familie' }}
+    {{ $data->category == 'single' ? 'Einzelläufer:in' : 'Gruppen/Familien' }}
   </div>
   <div class="text-base pb-base">
     <strong>Startgebühr</strong><br>

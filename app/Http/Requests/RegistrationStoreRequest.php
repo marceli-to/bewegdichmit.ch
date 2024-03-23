@@ -33,7 +33,7 @@ class RegistrationStoreRequest extends FormRequest
       'location' => 'required',
       'email' => 'required|email',
       'group_name' => 'required_if:category,group',
-      'number_of_members' => 'required_if:category,group',
+      'number_of_members' => 'required_if:category,group|max:6',
       'conditions' => 'accepted',
       'buddy' => 'nullable',
       'remarks' => 'nullable',

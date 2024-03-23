@@ -17,5 +17,6 @@ use App\Http\Controllers\ApartmentController;
 
 Route::view('/', 'pages.home')->name('page.home');
 Route::view('/teilnahmebedingungen', 'pages.conditions')->name('page.conditions');
+Route::view('/impressum', 'pages.imprint')->name('page.imprint');
 
 
