@@ -17,8 +17,9 @@
     <div class="mt-20 lg:mt-30">
       <div class="sm:grid sm:grid-cols-12 sm:gap-x-16 lg:gap-x-20 sm:gap-y-16 lg:gap-y-20">
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.category">Kategorie*</form-label>
+          <form-label id="category" :error="errors.category">Kategorie*</form-label>
           <form-select 
+            id="category"
             v-model="form.category" 
             :options="categories" 
             :error="errors.category"
@@ -27,7 +28,7 @@
         </div>
         <div class="hidden sm:block sm:col-span-6"></div>
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.entry_fee">
+          <form-label id="entry_fee" :error="errors.entry_fee">
             <template v-if="form.category == 'single' && hasEntryFeeError">
               <span class="text-red-600">Startgebühr für Einzelläufer:innen beträgt minimum 25.–</span>
             </template>
@@ -39,6 +40,7 @@
             </template>
           </form-label>
           <form-input 
+            id="entry_fee"
             type="number" 
             v-model="form.entry_fee" 
             :error="errors.entry_fee"
@@ -46,8 +48,9 @@
           </form-input>
         </div>
         <div class="sm:col-span-6 mb-20 sm:mb-0" v-if="isFetched">
-          <form-label :error="errors.start_time">Startzeit*</form-label>
+          <form-label id="start_time" :error="errors.start_time">Startzeit*</form-label>
           <form-select 
+            id="start_time"
             v-model="form.start_time" 
             :options="start_time" 
             :error="errors.start_time"
@@ -56,8 +59,9 @@
         </div>
         <template v-if="form.category == 'group'">
           <div class="sm:col-span-6 mb-20 sm:mb-0">
-            <form-label :error="errors.group_name">Gruppenname*</form-label>
+            <form-label id="group_name" :error="errors.group_name">Gruppenname*</form-label>
             <form-input 
+              id="group_name"
               type="text" 
               v-model="form.group_name" 
               :error="errors.group_name"
@@ -65,8 +69,9 @@
             </form-input>
           </div>
           <div class="sm:col-span-6 mb-20 sm:mb-0">
-            <form-label :error="errors.number_of_members">Anzahl Personen* (max. 6)</form-label>
+            <form-label id="number_of_members" :error="errors.number_of_members">Anzahl Personen* (max. 6)</form-label>
             <form-input 
+              id="number_of_members"
               type="number" 
               min="1"
               max="6"
@@ -78,8 +83,9 @@
           </div>
         </template>
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.firstname">Vorname*</form-label>
+          <form-label id="firstname" :error="errors.firstname">Vorname*</form-label>
           <form-input 
+            id="firstname"
             type="text" 
             v-model="form.firstname" 
             :error="errors.firstname"
@@ -87,8 +93,9 @@
           </form-input>
         </div>
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.name">Name*</form-label>
+          <form-label id="name" :error="errors.name">Name*</form-label>
           <form-input 
+            id="name"
             type="text" 
             v-model="form.name" 
             :error="errors.name"
@@ -96,8 +103,9 @@
           </form-input>
         </div>
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.street">Strasse, Nr*</form-label>
+          <form-label id="street" :error="errors.street">Strasse, Nr*</form-label>
           <form-input 
+            id="street"
             type="text" 
             v-model="form.street" 
             :error="errors.street"
@@ -105,8 +113,9 @@
           </form-input>
         </div>
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.location">PLZ, Ort*</form-label>
+          <form-label id="location" :error="errors.location">PLZ, Ort*</form-label>
           <form-input 
+            id="location"
             type="text" 
             v-model="form.location" 
             :error="errors.location"
@@ -114,8 +123,9 @@
           </form-input>
         </div>
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label :error="errors.email">E-Mail*</form-label>
-          <form-input 
+          <form-label id="email" :error="errors.email">E-Mail*</form-label>
+          <form-input
+            id="email" 
             type="email" 
             v-model="form.email" 
             :error="errors.email"
@@ -123,15 +133,16 @@
           </form-input>
         </div>
         <div class="sm:col-span-6 mb-20 sm:mb-0">
-          <form-label>Telefon</form-label>
+          <form-label id="phone">Telefon</form-label>
           <form-input 
+            id="phone"
             type="tel" 
             v-model="form.phone">
           </form-input>
         </div>
         <div class="sm:col-span-full mb-20 sm:mb-0">
-          <form-label>Bemerkungen</form-label>
-          <form-textarea v-model="form.remarks">
+          <form-label id="remarks">Bemerkungen</form-label>
+          <form-textarea v-model="form.remarks" id="remarks">
           </form-textarea>
         </div>
         <template v-if="form.category == 'single'">
