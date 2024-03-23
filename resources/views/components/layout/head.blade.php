@@ -6,6 +6,8 @@
 <title>Beweg dich mit | Wagi-Lauf 2024</title>
 <meta name="description" content="Beweg dich mit und erlebe mit uns den Wagerenhof! ">
 <meta property="og:title" content="Beweg dich mit | Wagi-Lauf 2024">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ env('APP_URL') }}/media/wagi_lauf_opengraph.jpg">
 <meta property="og:description" content="Begleitet von Live Musik, einer vielseitigen Foodmeile und weiteren Überraschungen lassen wir sportliche Betätigung und Teilhabe verschmelzen.  ">
 <meta property="og:url" content="{{url()->current()}}">
 <meta property="og:site_name" content="Beweg dich mit | Wagi-Lauf 2024">
