@@ -1,6 +1,9 @@
 {
+  "_bootstrap-a5991337.js": {
+    "file": "assets/bootstrap-a5991337.js"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-a98a7a1a.css",
+    "file": "assets/app-e53318c0.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -33,7 +36,10 @@
     "src": "resources/icons/chevron-down.svg"
   },
   "resources/js/app.js": {
-    "file": "assets/app-a5991337.js",
+    "file": "assets/app-e9a501cf.js",
+    "imports": [
+      "_bootstrap-a5991337.js"
+    ],
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -45,9 +51,9 @@
     "css": [
       "assets/register-70e260f4.css"
     ],
-    "file": "assets/register-3d4f1d91.js",
+    "file": "assets/register-351f5a6a.js",
     "imports": [
-      "resources/js/app.js"
+      "_bootstrap-a5991337.js"
     ],
     "isEntry": true,
     "src": "resources/js/form/register.js"

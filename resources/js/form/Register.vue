@@ -72,6 +72,7 @@
               max="6"
               v-model="form.number_of_members" 
               :error="errors.number_of_members"
+              @blur="validateLength()"
               @focus="removeError('number_of_members')">
             </form-input>
           </div>
@@ -324,6 +325,12 @@ export default {
       this.validationErrors = [];
       this.isSent = false;
     },
+
+    validateLength() {
+      if (this.form.number_of_members > 6) {
+        this.form.number_of_members = 6;
+      }
+    }
   },
 
   watch: {
@@ -374,12 +381,6 @@ export default {
 
     'form.conditions': function(value) {
       this.errors.conditions = null;
-    },
-
-    'form.number_of_members': function(value) {
-      if (value > 6) {
-        this.form.number_of_members = 6;
-      }
     },
 
   },

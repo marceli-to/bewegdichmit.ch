@@ -1,6 +1,7 @@
 @extends('app')
 @section('content')
-<x-partials.visual />
+{{-- <x-partials.visual /> --}}
+<x-partials.slideshow />
 <x-partials.intro />
 <x-partials.reasons />
 <x-partials.together />

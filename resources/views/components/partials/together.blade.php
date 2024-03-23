@@ -9,7 +9,6 @@
       <x-cards.image img="wagi_lauf_alessia_ronner.jpg" alt="Alessia Ronner" />
       <x-cards.image img="wagi_lauf_julien_widmer.jpg" alt="Julien Widmer" />
       <x-cards.image img="wagi_lauf_jannick_jaindl.jpg" alt="Jannick Jaindl" />
-      <x-cards.image img="wagi_lauf_helen_gerber.jpg" alt="Helen Gerber" />
       <x-cards.image img="wagi_lauf_dario_hasler.jpg" alt="Dario Hasler" />
       <x-cards.quote quote="Ich gebe immer vollgas!" author="Dario" class="bg-sky" />
       <x-cards.image img="wagi_lauf_leontine_stoeckly.jpg" alt="Leontine Stöckly" />
@@ -19,7 +18,6 @@
       <x-cards.quote quote="Das Laufen macht mir am meisten Spass." author="Christa" class="bg-sunshine" />
       <x-cards.image img="wagi_lauf_christa_pantli.jpg" alt="Christa Pantli" />
       <x-cards.image img="wagi_lauf_nicola_waldmeyer.jpg" alt="Nicola Waldmeyer" />
-      <x-cards.image img="wagi_lauf_regula_funk.jpg" alt="Regula Funk" />
       <x-cards.image img="wagi_lauf_urs_dobrew.jpg" alt="Urs Dobrew" />
       <x-cards.image img="wagi_lauf_sarita_ehrismann.jpg" alt="Sarita Ehrismann" />
       <x-cards.image img="wagi_lauf_simon_faessler.jpg" alt="Simon Fässler" />
@@ -36,7 +34,6 @@
       <x-cards.image img="wagi_lauf_andreas_jaindl.jpg" alt="Andreas Jaindl" />
       <x-cards.image img="wagi_lauf_barbara_leonardt.jpg" alt="Barbara Leonardt" />      
       <x-cards.image img="wagi_lauf_bastian_rechsteiner.jpg" alt="Bastian Rechsteiner" />
-      <x-cards.image img="wagi_lauf_benjamin_heim.jpg" alt="Benjamin Heim" />
       <x-cards.image img="wagi_lauf_daniel_egger.jpg" alt="Daniel Egger" />
       <x-cards.image img="wagi_lauf_donatella_di_meo.jpg" alt="Donatella di Meo" />
       <x-cards.image img="wagi_lauf_doris_glanzmann.jpg" alt="Doris Glanzmann" />
@@ -57,7 +54,6 @@
       <x-cards.image img="wagi_lauf_stephanie_bachmann.jpg" alt="Stephanie Bachmann" />
       <x-cards.image img="wagi_lauf_susi_brinkmann.jpg" alt="Susi Brinkmann" />
       <x-cards.image img="wagi_lauf_tamara_mitrovic.jpg" alt="Tamara Mitrovic" />
-      <x-cards.image img="wagi_lauf_theodor_gugelmann.jpg" alt="Theodor Gugelmann" />
     </div>
   </x-layout.inner>
 </x-layout.section>
