@@ -55,7 +55,7 @@ class RegistrationController extends Controller
     $max_slots = 100;
 
     $default_slots = ['10.30', '11.15','12.00'];
-    return response()->json(collect($default_slots->keys()));
+    return response()->json($default_slots);
 
     $slots = Registration::select('start_time', \DB::raw('count(*) as total'))
       ->groupBy('start_time')
