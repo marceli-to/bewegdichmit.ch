@@ -54,9 +54,6 @@ class RegistrationController extends Controller
     // if a start time has 100 registrations, it is fully booked and should not be available for selection
     $max_slots = 100;
 
-    $default_slots = ['10.30', '11.15','12.00'];
-    return response()->json($default_slots);
-
     $slots = Registration::select('start_time', \DB::raw('count(*) as total'))
       ->groupBy('start_time')
       ->get()
@@ -68,8 +65,9 @@ class RegistrationController extends Controller
     $default_slots = ['10.30' => $max_slots, '11.15' => $max_slots, '12.00' => $max_slots];
 
     // if slots is empty, all start times are available
-    if ($slots->isEmpty()) {
-      return response()->json(collect($default_slots->keys()));
+    if ($slots->isEmpty())
+    {
+      return response()->json(collect($default_slots)->keys());
     }
 
     // merge the default slots with the available slots
