@@ -28,6 +28,8 @@ export default {
       },
 
       fontSize: {
+        // xxs / 12px
+        'xxs': '0.60rem',
         'xs': '0.875rem', // 14px
         'sm': '1rem', // 16px
         'md': '1.125rem', // 18px
