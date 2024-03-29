@@ -12,11 +12,10 @@
           Herzlichen Dank für die grossartige Unterstützung
         </x-headings.h2>
         <div class="grid grid-cols-12 gap-x-16">
-          <x-cards.sponsor class="col-span-6 pb-15 relative" url="https://www.lionsclubs.org/de" title="Lions Club Zürich Metropol">
+          <x-cards.sponsor class="col-span-6 pb-15 relative" url="https://zuerich-metropol.lionsclub.ch/de/" title="Lions Club Zürich Metropol">
             <x-icons.logo_lions class="w-full h-full object-contain" />
             <span class="text-xxs !leading-none absolute bottom-2 left-0 block w-full text-center">Lions Club Zürich Metropol</span>
           </x-cards.sponsor>
-
           <x-cards.sponsor class="col-span-6" url="https://www.mobiliar.ch/versicherungen-und-vorsorge/generalagenturen/uster" title="Mobiliar">
             <x-icons.logo_mobiliar class="w-full h-full object-contain" />
           </x-cards.sponsor>
