@@ -6,7 +6,7 @@
         <x-headings.h1>
           Bewegst du dich mit?
         </x-headings.h1>
-        <p>Gemeinsam bestreiten wir die ca. 500 Meter lange Strecke rundum das Wagi-Quartier. Mit der Teilnahme unterstützen Läufer:innen, Familien, Gruppen die Gesundheit unserer Bewohnerinnen und Bewohner. Die einbezahlte Startgebühr kommt vollumfänglich unserem Spendenprojekt Gesundheit und Fitness zu Gute.</p>
+        <p>Gemeinsam bestreiten wir die ca. 500 Meter lange Strecke rund um das Wagi-Quartier. Mit der Teilnahme unterstützen Läufer:innen, Familien, Gruppen die Gesundheit unserer Bewohnerinnen und Bewohner. Die einbezahlte Startgebühr kommt vollumfänglich unserem Spendenprojekt Gesundheit und Fitness zugute.</p>
         <p>
           <strong>Programm:</strong><br>
           ab 09.30 Uhr Check-in der Läufer/Läuferinnen<br>

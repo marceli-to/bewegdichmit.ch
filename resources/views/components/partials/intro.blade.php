@@ -13,7 +13,7 @@
         </div>
       </x-layout.span>
       <x-layout.span class="sm:col-span-4">
-        <p>Gemeinsam mit den Wagerenhof Bewohnerinnen und Bewohner laufen, gehen, spazieren, rollen oder hüpfen wir rundum das Wagi-Quartier (Runde ca. 500 Meter).</p>
+        <p>Gemeinsam mit den Wagerenhof Bewohnerinnen und Bewohner laufen, gehen, spazieren, rollen oder hüpfen wir rund um das Wagi-Quartier (Runde ca. 500 Meter).</p>
         <p>Wir laden dich ein als Einzelläuferin und Einzelläufer, als Gruppe oder einfach nur als Zuschauerin und Zuschauer teilzunehmen. Denn jede und jeder kann am Wagi-Lauf nach seinen Möglichkeiten mitmachen. Mit deiner Teilnahme trägst du zur Gesundheit unserer Bewohnerinnen und Bewohner bei. </p>
       </x-layout.span>
     </x-layout.grid>
