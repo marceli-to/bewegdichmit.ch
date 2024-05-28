@@ -276,10 +276,12 @@ export default {
     slots() {
       this.axios.get('/api/slots').then(response => {
         response.data.forEach(slot => {
-          this.start_time.push({
-            value: slot,
-            label: slot + ' Uhr'
-          });
+          if (slot != '11.15'){
+            this.start_time.push({
+              value: slot,
+              label: slot + ' Uhr'
+            });
+          }
         });
         this.isFetched = true;
       });
